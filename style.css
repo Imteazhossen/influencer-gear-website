@@ -12,7 +12,9 @@
     margin-right: 0px;
     margin-bottom: 0px;
 }
-
+.hidden{
+    display: none;
+}
 header,
 .banner {
     margin: 1rem 2rem;
@@ -187,4 +189,60 @@ ul>li {
     justify-content: center;
     gap: 1rem;
     color: white;
+}
+/* media query code  */
+/* small device media query  */
+@media screen and (max-width:576px) {
+    .navbar,
+    .names,
+    .name,
+    .featured{
+        flex-direction: column;
+    }
+    .name > li {
+        margin-top: 1rem;
+    }
+    .names > div {
+    margin-left: 4.75rem;
+    margin-top: 1rem ;
+    }
+    .banner{
+        flex-direction: column-reverse;
+    }
+    .banner-image {
+        padding: 3rem;
+        background-image: url('./images/Circle\ design.svg');
+        background-repeat: no-repeat;
+        background-image: right;
+        transition: transform 2s;
+        height: 70%;
+        width: 70%;
+        
+    }
+    .ben{
+        height: 100%;
+        width: 100%;
+        background-color: aqua;
+        
+    }
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: .5rem;
+        margin-left: 0;
+    }
+    .image{
+        width: 100%;
+    }
+    .footer{
+        width: 100%;
+    }
+    .products {
+        width: calc(100%-14rem);
+        margin: 7rem;
+        margin-left: 3rem;
+        margin-right: 3rem;
+      
+    }
+
 }
